@@ -9,19 +9,29 @@
 
 body{
   font-family: 'Raleway', sans-serif;
+  background-color: black;
+
 }
 
-main{
-  height: 600px;
-  border: 1px solid red;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(49, 168, 221, 0.00) 100%);
-  background-image: url('./imagens/image\ 2.png');
-}
+header{
+  height: 605px;
 
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('./imagens/trilha-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 60px;
+  border-bottom: 1px solid #33A8DB80;
+}
 #trilha-css{
   display: flex;
   justify-content: center;
-  padding-top: 56px;
+}
+#trilha-css img{
+  width: 248px;
+  padding: 27px 10px;
+  border-radius: 268px;
+  background: rgba(0, 0, 0, 0.20);
 }
 
 #trilha-css .banner-content{
@@ -49,10 +59,12 @@ main{
 }
 
 #trilha-css p{
+  color: #fff;
   width: 510px;
   height: auto;
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 
 #trilha-css button{
@@ -64,7 +76,14 @@ main{
   letter-spacing: 3.36px;
 
   border: 2px solid #3BA1CD;
+  background-color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+#trilha-css button:hover{
+  color: #fff;
+  background-color: #252525;
 }
 
 #modulos{
@@ -101,28 +120,166 @@ main{
 #modulos ul{
   display:  flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 24px 0;
 }
 #modulos ul li{
+  width: 535px;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
   list-style: none;
 
-  padding: 16px 127px;
+  padding: 16px;
+  text-align: center;
 
   border: 1px solid #33A8DB;
   border-radius: 57px;
   background-color: #252525;
   box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.40) inset;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
 #modulos ul li span{
   color: var(--text-blue);
 }
 
+
+#banner-transforme{
+  /* height: 560px; */
+  height: 363px;
+  background-size: cover;
+  background-image: url("./imagens/woman-banner.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  border-top: 1px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+
+  display: flex;
+  align-items: center;
+}
+
+#banner-transforme h1{
+  width: 250px;
+  margin-left: 200px;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 3px 2px 0px #33A8DB; 
+  color: #fff;
+}
+
+
+#evolua{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 792px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#evolua h1{
+  color: #33A8DB;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.08px;
+}
+#evolua img{
+  margin-top: 32px;
+}
+#evolua p{
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #33A8DB;
+  background: linear-gradient(180deg, rgba(51, 168, 219, 0.00) 0%, rgba(51, 168, 219, 0.20) 99.99%, rgba(51, 168, 219, 0.20) 100%);
+  padding: 60px 0 40px 0;
+}
+footer img{
+  margin-bottom: 10px;
+}
+footer p{
+  color: #fff;
+}
+footer p span{
+  color: #33A8DB;
+  font-weight: 700;
+}
+
+/* media queries */
+
+/* Mobile Devices (Portrait): */
+
+@media screen and (max-width: 480px) {
+  header, #modulos{
+    height: 750px;
+  }
+  #trilha-css .banner-content, #evolua, #evolua img{
+    width: 300px;
+    padding: 0 20px;
+  }
+  #trilha-css p{
+    width: 300px;
+    text-align: left;
+  }
+  #trilha-css button{
+    padding: 16px 32px;
+  }
+
+  #modulos .modulos-content, #modulos ul li{
+    width: 300px;
+  }
+ 
+  #modulos h1{
+    text-align: center;
+  }
+  #banner-transforme h1{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #evolua p{
+
+  }
+  
+ }
+
+/* Mobile Devices (Landscape) and Small Tablets: */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+ }
+
+  
+
+/* Tablets and Small Desktops: */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+ }
+
+/* Desktops and Laptops: */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+ }
+
+/* Large Desktops and High-Resolution Displays: */
+
+@media screen and (min-width: 1200px) {
+
+ }
