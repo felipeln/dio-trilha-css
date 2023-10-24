@@ -1,0 +1,128 @@
+:root{
+  --text-blue: #33A8DB;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+main{
+  height: 600px;
+  border: 1px solid red;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(49, 168, 221, 0.00) 100%);
+  background-image: url('./imagens/image\ 2.png');
+}
+
+#trilha-css{
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+}
+
+#trilha-css .banner-content{
+  width: 510px;
+  height: 393px;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+
+}
+
+#trilha-css h1{
+  color: var(--text-blue);
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+#trilha-css p{
+  width: 510px;
+  height: auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#trilha-css button{
+  margin-top: 12px;
+  padding: 19px 91px;
+  color: #31A8DD;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 3.36px;
+
+  border: 2px solid #3BA1CD;
+  text-transform: uppercase;
+}
+
+#modulos{
+  background-color: #000;
+  padding-top: 118px;
+  height: 605px;
+}
+
+#modulos .modulos-content{
+  width: 792px;
+  height: 325px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  margin:  0 auto;
+}
+
+#modulos h1{
+  color: var(--text-blue);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 6.08px;
+}
+
+#modulos p{
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+#modulos ul{
+  display:  flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#modulos ul li{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  list-style: none;
+
+  padding: 16px 127px;
+
+  border: 1px solid #33A8DB;
+  border-radius: 57px;
+  background-color: #252525;
+  box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.40) inset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#modulos ul li span{
+  color: var(--text-blue);
+}
+
